@@ -1,0 +1,12 @@
+D:\Projects\Task\Applicants.APIs\AplicantsDomain\bin\Debug\net8.0\Applicants.Domain.deps.json
+D:\Projects\Task\Applicants.APIs\AplicantsDomain\bin\Debug\net8.0\Applicants.Domain.dll
+D:\Projects\Task\Applicants.APIs\AplicantsDomain\bin\Debug\net8.0\Applicants.Domain.pdb
+D:\Projects\Task\Applicants.APIs\AplicantsDomain\obj\Debug\net8.0\Applicants.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Task\Applicants.APIs\AplicantsDomain\obj\Debug\net8.0\Applicants.Domain.AssemblyInfoInputs.cache
+D:\Projects\Task\Applicants.APIs\AplicantsDomain\obj\Debug\net8.0\Applicants.Domain.AssemblyInfo.cs
+D:\Projects\Task\Applicants.APIs\AplicantsDomain\obj\Debug\net8.0\Applicants.Domain.csproj.CoreCompileInputs.cache
+D:\Projects\Task\Applicants.APIs\AplicantsDomain\obj\Debug\net8.0\Applicants.Domain.dll
+D:\Projects\Task\Applicants.APIs\AplicantsDomain\obj\Debug\net8.0\refint\Applicants.Domain.dll
+D:\Projects\Task\Applicants.APIs\AplicantsDomain\obj\Debug\net8.0\Applicants.Domain.pdb
+D:\Projects\Task\Applicants.APIs\AplicantsDomain\obj\Debug\net8.0\ref\Applicants.Domain.dll
+D:\Projects\Task\Applicants.APIs\AplicantsDomain\obj\Debug\net8.0\Applicants.Domain.csproj.AssemblyReference.cache

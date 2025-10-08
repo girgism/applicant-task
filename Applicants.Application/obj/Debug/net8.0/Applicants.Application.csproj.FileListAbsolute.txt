@@ -1,0 +1,15 @@
+D:\Projects\Task\Applicants.APIs\Applicants.Application\bin\Debug\net8.0\Applicants.Application.deps.json
+D:\Projects\Task\Applicants.APIs\Applicants.Application\bin\Debug\net8.0\Applicants.Application.dll
+D:\Projects\Task\Applicants.APIs\Applicants.Application\bin\Debug\net8.0\Applicants.Application.pdb
+D:\Projects\Task\Applicants.APIs\Applicants.Application\bin\Debug\net8.0\Applicants.Domain.dll
+D:\Projects\Task\Applicants.APIs\Applicants.Application\bin\Debug\net8.0\Applicants.Domain.pdb
+D:\Projects\Task\Applicants.APIs\Applicants.Application\obj\Debug\net8.0\Applicants.Application.csproj.AssemblyReference.cache
+D:\Projects\Task\Applicants.APIs\Applicants.Application\obj\Debug\net8.0\Applicants.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Task\Applicants.APIs\Applicants.Application\obj\Debug\net8.0\Applicants.Application.AssemblyInfoInputs.cache
+D:\Projects\Task\Applicants.APIs\Applicants.Application\obj\Debug\net8.0\Applicants.Application.AssemblyInfo.cs
+D:\Projects\Task\Applicants.APIs\Applicants.Application\obj\Debug\net8.0\Applicants.Application.csproj.CoreCompileInputs.cache
+D:\Projects\Task\Applicants.APIs\Applicants.Application\obj\Debug\net8.0\Applican.ABFE59B0.Up2Date
+D:\Projects\Task\Applicants.APIs\Applicants.Application\obj\Debug\net8.0\Applicants.Application.dll
+D:\Projects\Task\Applicants.APIs\Applicants.Application\obj\Debug\net8.0\refint\Applicants.Application.dll
+D:\Projects\Task\Applicants.APIs\Applicants.Application\obj\Debug\net8.0\Applicants.Application.pdb
+D:\Projects\Task\Applicants.APIs\Applicants.Application\obj\Debug\net8.0\ref\Applicants.Application.dll
