@@ -1,13 +1,14 @@
 ﻿using Applicants.Application.Features.Applicants.Commands;
 using Applicants.Application.Features.Applicants.Queries;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Applicants.APIs.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-//[Authorize]
+[Authorize]
 public class ApplicantController : ControllerBase
 {
     public IMediator _mediator { get; set; }

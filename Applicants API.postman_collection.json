@@ -1,0 +1,1963 @@
+{
+	"info": {
+		"_postman_id": "0ce3e3e9-d74d-4ca8-8e30-7e4004ade2cd",
+		"name": "Applicants API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44903611"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "Applicant",
+					"item": [
+						{
+							"name": "get-applicants",
+							"item": [
+								{
+									"name": "/api/Applicant/get-applicants",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Applicant/get-applicants?skip=0&take=10",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Applicant",
+												"get-applicants"
+											],
+											"query": [
+												{
+													"key": "skip",
+													"value": "0"
+												},
+												{
+													"key": "take",
+													"value": "10"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Applicant/get-applicants?skip=0&take=10",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Applicant",
+														"get-applicants"
+													],
+													"query": [
+														{
+															"key": "skip",
+															"value": "0"
+														},
+														{
+															"key": "take",
+															"value": "10"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"id\": -43060133,\n  \"name\": \"mollit eu\",\n  \"familyName\": \"reprehenderit aliqua minim\",\n  \"address\": \"consectetu\",\n  \"countryOfOrigin\": \"sit irure sint consequat\",\n  \"emailAddress\": \"aute\",\n  \"age\": 29960656,\n  \"hired\": true,\n  \"isDeleted\": true\n}"
+										},
+										{
+											"name": "Bad Request",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Applicant/get-applicants?skip=0&take=10",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Applicant",
+														"get-applicants"
+													],
+													"query": [
+														{
+															"key": "skip",
+															"value": "0"
+														},
+														{
+															"key": "take",
+															"value": "10"
+														}
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"statusCode\": 98716427,\n  \"errorMessage\": \"ut ex aliquip amet dolor\",\n  \"additionalData\": {\n    \"nullable\": true\n  }\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "add-applicant",
+							"item": [
+								{
+									"name": "/api/Applicant/add-applicant",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"name\": \"commodo\",\n  \"familyName\": \"nulla magna elit culpa\",\n  \"emailAddress\": \"laborum officia est dolore cillum\",\n  \"address\": \"aute occaecat ut\",\n  \"countryOfOrigin\": \"nisi sunt\",\n  \"age\": -98017892,\n  \"hired\": true\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Applicant/add-applicant",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Applicant",
+												"add-applicant"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"name\": \"commodo\",\n  \"familyName\": \"nulla magna elit culpa\",\n  \"emailAddress\": \"laborum officia est dolore cillum\",\n  \"address\": \"aute occaecat ut\",\n  \"countryOfOrigin\": \"nisi sunt\",\n  \"age\": -98017892,\n  \"hired\": true\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Applicant/add-applicant",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Applicant",
+														"add-applicant"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "-62885025"
+										},
+										{
+											"name": "Bad Request",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"name\": \"commodo\",\n  \"familyName\": \"nulla magna elit culpa\",\n  \"emailAddress\": \"laborum officia est dolore cillum\",\n  \"address\": \"aute occaecat ut\",\n  \"countryOfOrigin\": \"nisi sunt\",\n  \"age\": -98017892,\n  \"hired\": true\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Applicant/add-applicant",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Applicant",
+														"add-applicant"
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"statusCode\": 98716427,\n  \"errorMessage\": \"ut ex aliquip amet dolor\",\n  \"additionalData\": {\n    \"nullable\": true\n  }\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "update-applicant",
+							"item": [
+								{
+									"name": "/api/Applicant/update-applicant",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"name\": \"commodo\",\n  \"familyName\": \"nulla magna elit culpa\",\n  \"emailAddress\": \"laborum officia est dolore cillum\",\n  \"address\": \"aute occaecat ut\",\n  \"countryOfOrigin\": \"nisi sunt\",\n  \"age\": -98017892,\n  \"hired\": true\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Applicant/update-applicant?id=-62885025",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Applicant",
+												"update-applicant"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "-62885025"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"name\": \"commodo\",\n  \"familyName\": \"nulla magna elit culpa\",\n  \"emailAddress\": \"laborum officia est dolore cillum\",\n  \"address\": \"aute occaecat ut\",\n  \"countryOfOrigin\": \"nisi sunt\",\n  \"age\": -98017892,\n  \"hired\": true\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Applicant/update-applicant?id=-62885025",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Applicant",
+														"update-applicant"
+													],
+													"query": [
+														{
+															"key": "id",
+															"value": "-62885025"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "-62885025"
+										},
+										{
+											"name": "Bad Request",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"name\": \"commodo\",\n  \"familyName\": \"nulla magna elit culpa\",\n  \"emailAddress\": \"laborum officia est dolore cillum\",\n  \"address\": \"aute occaecat ut\",\n  \"countryOfOrigin\": \"nisi sunt\",\n  \"age\": -98017892,\n  \"hired\": true\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Applicant/update-applicant?id=-62885025",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Applicant",
+														"update-applicant"
+													],
+													"query": [
+														{
+															"key": "id",
+															"value": "-62885025"
+														}
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"statusCode\": 98716427,\n  \"errorMessage\": \"ut ex aliquip amet dolor\",\n  \"additionalData\": {\n    \"nullable\": true\n  }\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "delete-applicant",
+							"item": [
+								{
+									"name": "/api/Applicant/delete-applicant",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Applicant/delete-applicant?id=-62885025",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Applicant",
+												"delete-applicant"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "-62885025"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Applicant/delete-applicant?id=-62885025",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Applicant",
+														"delete-applicant"
+													],
+													"query": [
+														{
+															"key": "id",
+															"value": "-62885025"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "-62885025"
+										},
+										{
+											"name": "Bad Request",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Applicant/delete-applicant?id=-62885025",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Applicant",
+														"delete-applicant"
+													],
+													"query": [
+														{
+															"key": "id",
+															"value": "-62885025"
+														}
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"statusCode\": 98716427,\n  \"errorMessage\": \"ut ex aliquip amet dolor\",\n  \"additionalData\": {\n    \"nullable\": true\n  }\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "register",
+			"item": [
+				{
+					"name": "/register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/problem+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"in anim\",\n  \"password\": \"officia am\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/register",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "<API Key>",
+										"description": "Added as a part of security scheme: apikey"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"in anim\",\n  \"password\": \"officia am\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/register",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/problem+json"
+									},
+									{
+										"key": "Authorization",
+										"value": "<API Key>",
+										"description": "Added as a part of security scheme: apikey"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"in anim\",\n  \"password\": \"officia am\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/register",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"register"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/problem+json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"Excepteur officia\",\n  \"title\": \"in nisi proident\",\n  \"status\": -61422906,\n  \"detail\": \"labore deserunt tempor minim ame\",\n  \"instance\": \"Excepteur pariatur\",\n  \"errors\": {\n    \"culpa3fc\": [\n      \"in ea sed non\",\n      \"aliqua fugiat proident in\"\n    ],\n    \"in40\": [\n      \"sint enim dolor cillum\",\n      \"deserunt dolore exercitation\"\n    ]\n  }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "/login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"elit mollit veniam ex in\",\n  \"password\": \"id consectetur pa\",\n  \"twoFactorCode\": \"amet ipsum veniam fugiat\",\n  \"twoFactorRecoveryCode\": \"minim dolor quis Lorem\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/login?useCookies=false&useSessionCookies=true",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"login"
+							],
+							"query": [
+								{
+									"key": "useCookies",
+									"value": "false"
+								},
+								{
+									"key": "useSessionCookies",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "<API Key>",
+										"description": "Added as a part of security scheme: apikey"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"elit mollit veniam ex in\",\n  \"password\": \"id consectetur pa\",\n  \"twoFactorCode\": \"amet ipsum veniam fugiat\",\n  \"twoFactorRecoveryCode\": \"minim dolor quis Lorem\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/login?useCookies=false&useSessionCookies=true",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"login"
+									],
+									"query": [
+										{
+											"key": "useCookies",
+											"value": "false"
+										},
+										{
+											"key": "useSessionCookies",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"accessToken\": \"veniam aute\",\n  \"expiresIn\": 63439904,\n  \"refreshToken\": \"tempor dolor velit\",\n  \"tokenType\": \"proident\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "refresh",
+			"item": [
+				{
+					"name": "/refresh",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"refreshToken\": \"velit dolore aute nostrud in\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/refresh",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"refresh"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "<API Key>",
+										"description": "Added as a part of security scheme: apikey"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"refreshToken\": \"velit dolore aute nostrud in\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/refresh",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"refresh"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"accessToken\": \"veniam aute\",\n  \"expiresIn\": 63439904,\n  \"refreshToken\": \"tempor dolor velit\",\n  \"tokenType\": \"proident\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "confirmEmail",
+			"item": [
+				{
+					"name": "Map Identity Api-/confirm Email",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/confirmEmail?userId=exercitation&code=exercitation&changedEmail=exercitation",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"confirmEmail"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "exercitation"
+								},
+								{
+									"key": "code",
+									"value": "exercitation"
+								},
+								{
+									"key": "changedEmail",
+									"value": "exercitation"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "<API Key>",
+										"description": "Added as a part of security scheme: apikey"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/confirmEmail?userId=exercitation&code=exercitation&changedEmail=exercitation",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"confirmEmail"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "exercitation"
+										},
+										{
+											"key": "code",
+											"value": "exercitation"
+										},
+										{
+											"key": "changedEmail",
+											"value": "exercitation"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "resendConfirmationEmail",
+			"item": [
+				{
+					"name": "/resendConfirmationEmail",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"quis Lorem deserunt commodo\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/resendConfirmationEmail",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"resendConfirmationEmail"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "<API Key>",
+										"description": "Added as a part of security scheme: apikey"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"quis Lorem deserunt commodo\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/resendConfirmationEmail",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"resendConfirmationEmail"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "forgotPassword",
+			"item": [
+				{
+					"name": "/forgotPassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/problem+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"quis Lorem deserunt commodo\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/forgotPassword",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"forgotPassword"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "<API Key>",
+										"description": "Added as a part of security scheme: apikey"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"quis Lorem deserunt commodo\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/forgotPassword",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"forgotPassword"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/problem+json"
+									},
+									{
+										"key": "Authorization",
+										"value": "<API Key>",
+										"description": "Added as a part of security scheme: apikey"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"quis Lorem deserunt commodo\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/forgotPassword",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"forgotPassword"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/problem+json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"Excepteur officia\",\n  \"title\": \"in nisi proident\",\n  \"status\": -61422906,\n  \"detail\": \"labore deserunt tempor minim ame\",\n  \"instance\": \"Excepteur pariatur\",\n  \"errors\": {\n    \"culpa3fc\": [\n      \"in ea sed non\",\n      \"aliqua fugiat proident in\"\n    ],\n    \"in40\": [\n      \"sint enim dolor cillum\",\n      \"deserunt dolore exercitation\"\n    ]\n  }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "resetPassword",
+			"item": [
+				{
+					"name": "/resetPassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/problem+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"ipsum minim veniam reprehenderit\",\n  \"newPassword\": \"est Excepteur\",\n  \"resetCode\": \"eiusmod fugiat magna eu\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/resetPassword",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"resetPassword"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "<API Key>",
+										"description": "Added as a part of security scheme: apikey"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"ipsum minim veniam reprehenderit\",\n  \"newPassword\": \"est Excepteur\",\n  \"resetCode\": \"eiusmod fugiat magna eu\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/resetPassword",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"resetPassword"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/problem+json"
+									},
+									{
+										"key": "Authorization",
+										"value": "<API Key>",
+										"description": "Added as a part of security scheme: apikey"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"ipsum minim veniam reprehenderit\",\n  \"newPassword\": \"est Excepteur\",\n  \"resetCode\": \"eiusmod fugiat magna eu\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/resetPassword",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"resetPassword"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/problem+json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"Excepteur officia\",\n  \"title\": \"in nisi proident\",\n  \"status\": -61422906,\n  \"detail\": \"labore deserunt tempor minim ame\",\n  \"instance\": \"Excepteur pariatur\",\n  \"errors\": {\n    \"culpa3fc\": [\n      \"in ea sed non\",\n      \"aliqua fugiat proident in\"\n    ],\n    \"in40\": [\n      \"sint enim dolor cillum\",\n      \"deserunt dolore exercitation\"\n    ]\n  }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "manage",
+			"item": [
+				{
+					"name": "2fa",
+					"item": [
+						{
+							"name": "/manage/2fa",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"enable\": true,\n  \"twoFactorCode\": \"dolor dolore nostrud\",\n  \"resetSharedKey\": false,\n  \"resetRecoveryCodes\": false,\n  \"forgetMachine\": false\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/manage/2fa",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"manage",
+										"2fa"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "<API Key>",
+												"description": "Added as a part of security scheme: apikey"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"enable\": true,\n  \"twoFactorCode\": \"dolor dolore nostrud\",\n  \"resetSharedKey\": false,\n  \"resetRecoveryCodes\": false,\n  \"forgetMachine\": false\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/manage/2fa",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"manage",
+												"2fa"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"isMachineRemembered\": true,\n  \"isTwoFactorEnabled\": false,\n  \"recoveryCodesLeft\": 4825754,\n  \"sharedKey\": \"ut\",\n  \"recoveryCodes\": [\n    \"\",\n    \"sunt\"\n  ]\n}"
+								},
+								{
+									"name": "Bad Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/problem+json"
+											},
+											{
+												"key": "Authorization",
+												"value": "<API Key>",
+												"description": "Added as a part of security scheme: apikey"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"enable\": true,\n  \"twoFactorCode\": \"dolor dolore nostrud\",\n  \"resetSharedKey\": false,\n  \"resetRecoveryCodes\": false,\n  \"forgetMachine\": false\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/manage/2fa",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"manage",
+												"2fa"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/problem+json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"type\": \"Excepteur officia\",\n  \"title\": \"in nisi proident\",\n  \"status\": -61422906,\n  \"detail\": \"labore deserunt tempor minim ame\",\n  \"instance\": \"Excepteur pariatur\",\n  \"errors\": {\n    \"culpa3fc\": [\n      \"in ea sed non\",\n      \"aliqua fugiat proident in\"\n    ],\n    \"in40\": [\n      \"sint enim dolor cillum\",\n      \"deserunt dolore exercitation\"\n    ]\n  }\n}"
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "<API Key>",
+												"description": "Added as a part of security scheme: apikey"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"enable\": true,\n  \"twoFactorCode\": \"dolor dolore nostrud\",\n  \"resetSharedKey\": false,\n  \"resetRecoveryCodes\": false,\n  \"forgetMachine\": false\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/manage/2fa",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"manage",
+												"2fa"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "info",
+					"item": [
+						{
+							"name": "/manage/info",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/manage/info",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"manage",
+										"info"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "<API Key>",
+												"description": "Added as a part of security scheme: apikey"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/manage/info",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"manage",
+												"info"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"email\": \"aliqua in dolore veniam\",\n  \"isEmailConfirmed\": true\n}"
+								},
+								{
+									"name": "Bad Request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/problem+json"
+											},
+											{
+												"key": "Authorization",
+												"value": "<API Key>",
+												"description": "Added as a part of security scheme: apikey"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/manage/info",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"manage",
+												"info"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/problem+json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"type\": \"Excepteur officia\",\n  \"title\": \"in nisi proident\",\n  \"status\": -61422906,\n  \"detail\": \"labore deserunt tempor minim ame\",\n  \"instance\": \"Excepteur pariatur\",\n  \"errors\": {\n    \"culpa3fc\": [\n      \"in ea sed non\",\n      \"aliqua fugiat proident in\"\n    ],\n    \"in40\": [\n      \"sint enim dolor cillum\",\n      \"deserunt dolore exercitation\"\n    ]\n  }\n}"
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "<API Key>",
+												"description": "Added as a part of security scheme: apikey"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/manage/info",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"manage",
+												"info"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/manage/info",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"newEmail\": \"in in\",\n  \"newPassword\": \"qui reprehenderit esse\",\n  \"oldPassword\": \"elit laboris\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/manage/info",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"manage",
+										"info"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "<API Key>",
+												"description": "Added as a part of security scheme: apikey"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"newEmail\": \"in in\",\n  \"newPassword\": \"qui reprehenderit esse\",\n  \"oldPassword\": \"elit laboris\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/manage/info",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"manage",
+												"info"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"email\": \"aliqua in dolore veniam\",\n  \"isEmailConfirmed\": true\n}"
+								},
+								{
+									"name": "Bad Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/problem+json"
+											},
+											{
+												"key": "Authorization",
+												"value": "<API Key>",
+												"description": "Added as a part of security scheme: apikey"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"newEmail\": \"in in\",\n  \"newPassword\": \"qui reprehenderit esse\",\n  \"oldPassword\": \"elit laboris\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/manage/info",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"manage",
+												"info"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/problem+json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"type\": \"Excepteur officia\",\n  \"title\": \"in nisi proident\",\n  \"status\": -61422906,\n  \"detail\": \"labore deserunt tempor minim ame\",\n  \"instance\": \"Excepteur pariatur\",\n  \"errors\": {\n    \"culpa3fc\": [\n      \"in ea sed non\",\n      \"aliqua fugiat proident in\"\n    ],\n    \"in40\": [\n      \"sint enim dolor cillum\",\n      \"deserunt dolore exercitation\"\n    ]\n  }\n}"
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "<API Key>",
+												"description": "Added as a part of security scheme: apikey"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"newEmail\": \"in in\",\n  \"newPassword\": \"qui reprehenderit esse\",\n  \"oldPassword\": \"elit laboris\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/manage/info",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"manage",
+												"info"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "logout",
+			"item": [
+				{
+					"name": "/logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/logout",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "<API Key>",
+										"description": "Added as a part of security scheme: apikey"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/logout",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "{{apiKey}}",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+# .NET Core
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.ncrunchproject
+*.vs/
+*.csproj.user
+*.csproj.nuget.*
+project.lock.json
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio
+.vs/
+
+# NuGet
+*.nupkg
+**/[Pp]ackages/*
+
+# Azure
+*.azurePubxml
+*.publishsettings
+
+# Database
+*.mdf
+*.ldf
+
+# Logs
+*.log
