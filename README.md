@@ -53,4 +53,7 @@ The project follows **Clean Architecture**, structured into distinct layers:
 1. Clone the repository  
    ```bash
    git clone https://github.com/girgism/applicant-task.git
+2. Use the default account for login
+   User: girgis@local.com
+   Password: password!11
 
